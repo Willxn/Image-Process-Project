@@ -7,7 +7,7 @@ clear all;
 close all;
 clc;
 
-Img = imread('noisy_image_sp.jpg');
+Img = imread('Image-Process-Project/testPics/noisy_image_sp.jpg');
 Img = double(rgb2gray(Img));
 figure(1);imshow(uint8(Img));
 

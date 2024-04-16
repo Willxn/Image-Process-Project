@@ -1,13 +1,5 @@
-%---------------------------------------------%
-%					      %
-%          工作室提供代做matlab仿真	      %
-%					      %
-%  详情请访问：http://cn.mikecrm.com/DeOOXFc  %
-%					      %
-%---------------------------------------------%
-
- %% Restore an degraded Image (noising and blurring) by TV method. 
- %% The numerical implementation is based on Roe upwind schema
+%% Restore an degraded Image (noising and blurring) by TV method. 
+%% The numerical implementation is based on Roe upwind schema
  
 clear all;
 close all;
