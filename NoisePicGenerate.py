@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # 加载图像
-image_path = '/Users/will/Desktop/women.jpeg'  # 替换为你的图像路径
+image_path = '/Users/will/Documents/Spring24/ECE6560/6560_final_project/Image-Process-Project/testPics/women.jpeg'  # 替换为你的图像路径
 image = cv2.imread(image_path)
 rows, cols, channels = image.shape
 
@@ -14,7 +14,7 @@ noisy_image_gaussian = image + gaussian_noise
 noisy_image_gaussian = np.clip(noisy_image_gaussian, 0, 255).astype(np.uint8)
 
 # 保存高斯噪声图像
-cv2.imwrite('/Users/will/Desktop/noisy_image_gaussian.jpg', noisy_image_gaussian)
+cv2.imwrite('/Users/will/Documents/Spring24/ECE6560/6560_final_project/Image-Process-Project/testPics/women_noisy_gaussian.jpg', noisy_image_gaussian)
 
 # 添加椒盐噪声
 salt_pepper_ratio = 0.5  # 椒盐比例
@@ -37,7 +37,7 @@ for _ in range(int(num_pepper)):
     noisy_image_sp[i, j] = 0
 
 # 保存椒盐噪声图像
-cv2.imwrite('/Users/will/Desktop/noisy_image_sp.jpg', noisy_image_sp)
+cv2.imwrite('/Users/will/Documents/Spring24/ECE6560/6560_final_project/Image-Process-Project/testPics/women_noisy_sp.jpg', noisy_image_sp)
 
 # 显示或保存带噪声图像
 cv2.imshow('Gaussian Noise', noisy_image_gaussian)
